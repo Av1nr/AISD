@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
 class CycleShift {
-    static void main() {
+    static void main(String args[]) {
         Scanner enter = new Scanner(System.in);
         System.out.print("Введите стартовое слово: ");
         String start = enter.nextLine();
         System.out.print("Введите слово , которое проверяется на циклический сдвиг: ");
         String get = enter.nextLine();
+        enter.close();
         if(start.equals(get)){
             System.out.println("They are the same");
         }
