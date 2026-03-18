@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class CycleShift {
-    static void main(String args[]) {
+    static void main(String[] args) {
         Scanner enter = new Scanner(System.in);
         System.out.print("Введите стартовое слово: ");
         String start = enter.nextLine();
