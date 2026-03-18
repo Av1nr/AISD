@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 class ArrayWithNumbers {
-    static void main() {
+    static void main(String args[]) {
         Scanner enter = new Scanner(System.in);
         System.out.print("Длина массива: ");
         int l = enter.nextInt();
@@ -11,6 +11,7 @@ class ArrayWithNumbers {
             System.out.print("Введите элемент на [" + i + "] месте: ");
             array[i] = enter.nextInt();
         }
+        enter.close();
         if(!have0(array)){
             System.out.println("Missing number is 0");
         }
